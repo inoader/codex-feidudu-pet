@@ -19,6 +19,9 @@ python3 install.py
 
 ## 本次修正
 
+根据实际截图，待机比跳跃结束帧大约7%，且偏亮黄；现将六帧待机及中性帧按同一比例缩小，并以跳跃结束帧校正黄色。保留原眨眼、呼吸和脚底锚点。对比见[尺寸与颜色](qa/idle-comparison.png)。
+
+
 - 鼻子去掉凸起边圈，脸型拉宽、肚子加圆，短手与向前坐姿脚更接近参考。
 - 逐行动作制作：左右跑动步态交替；同一只短爪挥手；小幅跳跃保留上下位移。
 - 工作改为算手指/思考，检查改为托腮观察，等待为伸掌示意。
@@ -49,7 +52,7 @@ pip install -r requirements.txt
 python3 build_pet.py --skill-dir ~/.codex/skills/hatch-pet
 ```
 
-`source/rows/` 保存已选定的整行动作原图；构建脚本调用 hatch-pet 的提帧、对齐、合成和边缘清理工具。更换原图后仍需重新视觉审查，脚本通过不代表动作和形象必然正确。
+`source/rows/` 保存已选定的整行动作原图；构建脚本调用 hatch-pet 的提帧、对齐、合成和边缘清理工具，再调用 `normalize_idle.py` 统一待机尺寸和色调。更换原图后仍需重新视觉审查，脚本通过不代表动作和形象必然正确。
 
 生成使用内置 imagegen；提示词见 `source/prompts/`，视频观察记录见 [video-reference-review.md](source/video-reference-review.md)。
 

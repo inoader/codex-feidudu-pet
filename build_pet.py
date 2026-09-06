@@ -48,4 +48,7 @@ run('despill_chroma_edges.py', final/'extended.png', '--output', final/'extended
 run('validate_atlas.py', final/'extended.webp', '--require-v2', '--chroma-key', '#0000FF',
     '--json-out', qa/'validation.json')
 shutil.copy2(final/'extended.webp', root/'spritesheet.webp')
+subprocess.run([sys.executable, str(root/'normalize_idle.py'), str(root/'spritesheet.webp')], check=True)
+run('validate_atlas.py', root/'spritesheet.webp', '--require-v2', '--chroma-key', '#0000FF',
+    '--json-out', qa/'validation-normalized.json')
 print('Rebuilt spritesheet.webp; inspect visual QA before installing modified rows.')
