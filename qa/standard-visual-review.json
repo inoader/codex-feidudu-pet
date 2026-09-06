@@ -1,0 +1,16 @@
+{
+  "visual_qa": "pass",
+  "reviewer": "standard_qa",
+  "rows": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "running",
+    "review"
+  ],
+  "notes": "All nine rows visually inspected. Full silhouettes, correct state gestures, consistent seated scale. Stable-slot warnings accepted after frame inspection."
+}

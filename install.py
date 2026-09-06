@@ -14,10 +14,11 @@ target = home / 'pets' / 'meituan-feidudu'
 if target.exists() and not args.replace:
     parser.error(f'{target} already exists; use --replace to overwrite')
 manifest = json.loads((source / 'pet.json').read_text(encoding='utf-8'))
-assert manifest['spritesheetPath'] == 'spritesheet.png'
-assert (source / 'spritesheet.png').is_file()
+assert manifest['spriteVersionNumber'] == 2
+assert manifest['spritesheetPath'] == 'spritesheet.webp'
+assert (source / 'spritesheet.webp').is_file()
 target.mkdir(parents=True, exist_ok=True)
-for name in ('pet.json', 'spritesheet.png'):
+for name in ('pet.json', 'spritesheet.webp'):
     shutil.copy2(source / name, target / name)
 print(f'Installed: {target}')
 print('Reopen Codex and select 肥嘟嘟 · 美团袋鼠 in the pet picker.')

@@ -1,6 +1,7 @@
 {
+  "id": "meituan-feidudu",
   "displayName": "肥嘟嘟 · 美团袋鼠",
-  "description": "参考美团袋鼠肥嘟嘟原头像与表情图制作的本地桌宠",
-  "spriteVersionNumber": 1,
-  "spritesheetPath": "spritesheet.png"
+  "description": "参考肥嘟嘟视频修正形象与动作，含16向视线",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
 }

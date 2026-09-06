@@ -1,0 +1,160 @@
+{
+  "visual_qa": "pass",
+  "reviewer": "final_visual",
+  "qa_note": "修复后的337.5到000衔接通过；四个主方向明确，全部16方向保持正确顺序和稳定下半身，九个标准动作行通过。",
+  "directions": [
+    {
+      "direction": "000",
+      "verdict": "pass",
+      "expected": "up",
+      "observed": "up",
+      "reason": "正面抬脸、双眼朝上，区别于neutral。",
+      "horizontal_evidence": "脸和鼻子居中。",
+      "vertical_evidence": "瞳孔上移，脸部抬起。"
+    },
+    {
+      "direction": "022.5",
+      "verdict": "warning",
+      "expected": "up-right",
+      "observed": "up with subtle right component",
+      "reason": "抬眼明确，右向分量弱；在000到045的序列中保持同向过渡。",
+      "horizontal_evidence": "脸轴相对000略向屏幕右移，仍接近正面。",
+      "vertical_evidence": "双瞳朝上。"
+    },
+    {
+      "direction": "045",
+      "verdict": "warning",
+      "expected": "up-right",
+      "observed": "right with subtle upward component",
+      "reason": "右转清楚，仰角轻微；结合000到090的顺序可以辨认上右过渡。",
+      "horizontal_evidence": "鼻尖右伸，远侧眼压缩。",
+      "vertical_evidence": "比090眼神略高、面部略抬。"
+    },
+    {
+      "direction": "067.5",
+      "verdict": "warning",
+      "expected": "up-right",
+      "observed": "right with subtle upward component",
+      "reason": "接近水平向右，上分量轻微，与045相似但不倒转。",
+      "horizontal_evidence": "脸和鼻尖朝屏幕右。",
+      "vertical_evidence": "相较090保留稍高的眼神和脸部姿态。"
+    },
+    {
+      "direction": "090",
+      "verdict": "pass",
+      "expected": "right",
+      "observed": "right",
+      "reason": "侧向鼻子和眼神清楚朝屏幕右。",
+      "horizontal_evidence": "鼻尖右伸，眼睛右看。",
+      "vertical_evidence": "脸轴接近水平。"
+    },
+    {
+      "direction": "112.5",
+      "verdict": "warning",
+      "expected": "down-right",
+      "observed": "right with subtle downward component",
+      "reason": "右向明确，低头较轻；鼻子较090降低，继续过渡到135。",
+      "horizontal_evidence": "鼻尖仍位于屏幕右侧。",
+      "vertical_evidence": "鼻尖及脸部较090向下倾。"
+    },
+    {
+      "direction": "135",
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "reason": "低头及右向同时可见。",
+      "horizontal_evidence": "脸和鼻尖偏屏幕右。",
+      "vertical_evidence": "脸向下斜，瞳孔朝下。"
+    },
+    {
+      "direction": "157.5",
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "reason": "低头主导，仍保留右侧分量。",
+      "horizontal_evidence": "鼻尖偏右，脸未完全回正。",
+      "vertical_evidence": "头部明显向腹部下俯。"
+    },
+    {
+      "direction": "180",
+      "verdict": "pass",
+      "expected": "down",
+      "observed": "down",
+      "reason": "正面低头且双眼朝下，方向明确。",
+      "horizontal_evidence": "鼻子居中，两眼近对称。",
+      "vertical_evidence": "瞳孔下移，头鼻向下俯。"
+    },
+    {
+      "direction": "202.5",
+      "verdict": "pass",
+      "expected": "down-left",
+      "observed": "down-left",
+      "reason": "从低头中心开始向屏幕左转。",
+      "horizontal_evidence": "鼻尖移至屏幕左。",
+      "vertical_evidence": "保留低头和下看眼神。"
+    },
+    {
+      "direction": "225",
+      "verdict": "pass",
+      "expected": "down-left",
+      "observed": "down-left",
+      "reason": "低头和左转两个轴可见。",
+      "horizontal_evidence": "鼻尖左伸，侧脸显露。",
+      "vertical_evidence": "脸轴较270向下倾斜。"
+    },
+    {
+      "direction": "247.5",
+      "verdict": "warning",
+      "expected": "down-left",
+      "observed": "left with subtle downward component",
+      "reason": "左向清楚，下分量较弱；较270鼻子位置更低，顺序中继续从低头向水平过渡。",
+      "horizontal_evidence": "鼻子明显朝屏幕左。",
+      "vertical_evidence": "鼻尖和脸轴较270轻微下倾。"
+    },
+    {
+      "direction": "270",
+      "verdict": "pass",
+      "expected": "left",
+      "observed": "left",
+      "reason": "侧面鼻子和眼神清楚朝屏幕左。",
+      "horizontal_evidence": "鼻尖左伸，眼睛左看。",
+      "vertical_evidence": "脸轴接近水平。"
+    },
+    {
+      "direction": "292.5",
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "up-left",
+      "reason": "水平左向基础上明显抬头。",
+      "horizontal_evidence": "鼻尖保持屏幕左向。",
+      "vertical_evidence": "下巴、鼻尖和眼神较270抬高。"
+    },
+    {
+      "direction": "315",
+      "verdict": "warning",
+      "expected": "up-left",
+      "observed": "up-left",
+      "reason": "保留左上眼神并开始回正；从292.5的侧面回正步幅略大，但仍是同向转动，没有身份突变、反转或明显登记跳跃。",
+      "horizontal_evidence": "鼻子仍偏屏幕左，脸呈较浅侧转。",
+      "vertical_evidence": "瞳孔朝上且脸部抬起。"
+    },
+    {
+      "direction": "337.5",
+      "verdict": "warning",
+      "expected": "up-left",
+      "observed": "up with subtle left component",
+      "reason": "左分量较弱，接近正面上看；鼻子缩短、双眼展开程度与000接近，原先明显的轮廓跳变已消除。",
+      "horizontal_evidence": "相对000鼻子及眼神轻微偏屏幕左，较315继续回正。",
+      "vertical_evidence": "双瞳上移，保留抬脸姿态。"
+    }
+  ],
+  "review_warnings": [
+    "022.5和337.5水平分量、045/067.5/112.5/247.5垂直分量弱，标签及顺序检查可接受。",
+    "292.5到315回正步幅略大，未形成明显换形。",
+    "337.5到000现为小幅回正，衔接可接受。",
+    "透明孔候选为耳间和脚间自然空隙。",
+    "结构及透明边缘验证通过。",
+    "完整动作帧序列已复核；GIF工具只显示首帧，播放速度未目视验证。"
+  ],
+  "repair_rows": []
+}
