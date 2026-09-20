@@ -1,1 +1,18 @@
-{"visual_qa":"pass","reviewer":"idle_consistency_qa","notes":"Normalized idle and preferred landing now have similar height, volume and yellow tone. Idle cells0-6 complete and feet stable; no major distortion or orange cast.","limitations":"Static atlas review; actual app transition playback not inspected. Local pose lighting remains slightly different.","unchanged_rows":"Rows1-10 remain pixel-identical to previously approved atlas."}
+{
+  "visual_qa": "pass",
+  "reviewer": "hover_blink_review",
+  "notes": "Idle and hover landing share size, yellow tone and face shading. No visible eyelid seam or drift, no jump clipping. Eyelid microvariation remains visible.",
+  "limitations": [
+    "660ms shallow squint remains slower than natural blink because native timing is fixed.",
+    "Jump retains travel but has no landing deformation.",
+    "Static sequence and first animation frame inspected, not native runtime playback."
+  ],
+  "verified": [
+    "rebuild byte-identical",
+    "idle/landing pixel-identical",
+    "hover frames differ only by translation",
+    "blink changes only eye patches and preserves alpha",
+    "other9rows pixel-identical"
+  ],
+  "atlas_sha256": "d5edc52039112b97473abf2e15a6759730f07215f69bde96469cddf6bf622ca4"
+}

@@ -1,27 +1,40 @@
 {
-  "scale": 0.9329896907216495,
-  "source_belly_rgb": [
-    253.0,
-    229.0,
-    30.0
+  "canonical": "jumping frame4",
+  "idle_durations_ms": [
+    1680,
+    660,
+    660,
+    840,
+    840,
+    1920
   ],
-  "target_belly_rgb": [
-    253.0,
-    218.0,
-    33.0
+  "eyelid_frame": 1,
+  "eyelid_hold_ms": 660,
+  "fully_closed_hold_ms": 0,
+  "eye_patch_boxes": [
+    [
+      70,
+      56,
+      87,
+      74
+    ],
+    [
+      88,
+      60,
+      106,
+      79
+    ]
   ],
-  "channel_offset": [
-    0.0,
-    -11.0,
-    3.0
+  "jump_y_offsets": [
+    0,
+    2,
+    -9,
+    1,
+    0
   ],
-  "changed_cells": [
-    "r0c0",
-    "r0c1",
-    "r0c2",
-    "r0c3",
-    "r0c4",
-    "r0c5",
-    "r0c6"
-  ]
+  "changed_rows": [
+    0,
+    4
+  ],
+  "color_strategy": "shared exact artwork, no per-state tint"
 }
